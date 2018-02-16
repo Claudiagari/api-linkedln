@@ -15,3 +15,11 @@ function getProfileData() {
   IN.API.Raw('/people/~:(id,num-connections,picture-url)').result(onSuccess).error(onError);
   IN.API.Raw('/people/~').result(onSuccess).error(onError);
 }
+
+$('#close').on('click', function() {
+  IN.User.logout(onLogout);
+});
+
+function onLogout() {
+  window.location.href = '../index.html';
+}

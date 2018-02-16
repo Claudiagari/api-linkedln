@@ -1,4 +1,5 @@
 function onLinkedInLoad() {
+  
   IN.Event.on(IN, 'auth', getProfileData);
 }
 
@@ -7,7 +8,7 @@ function onSuccess(data) {
 }
 
 function response(data) {
-  window.location.href = 'views/profile.html';
+ 
 }
 
 // Handle an error response from the API call
@@ -17,5 +18,8 @@ function onError(error) {
 
 // Use the API call wrapper to request the member's basic profile data
 function getProfileData() {
+  
+  window.location.href = 'views/profile.html';
   IN.API.Raw('/people/~:(id,num-connections,picture-url)').result(onSuccess).error(onError);
-}
+  
+};

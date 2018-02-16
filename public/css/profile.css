@@ -1,8 +1,8 @@
-body{
+body {
     background: #283e4a;
     color: #fff;
 }
-.photo{
+.photo {
     margin-top: 15px;
 }
 .card .card-content p{
@@ -10,4 +10,8 @@ body{
 }
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating){
     color: #0084bf;
+}
+
+.butt {
+    margin-top: 15px;
 }
