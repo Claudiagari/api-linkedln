@@ -4,7 +4,10 @@ function onLinkedInLoad() {
 
 // Handle the successful return from the API call
 function onSuccess(data) {
-  console.log(data);
+}
+
+function response(data) {
+  window.location.href = 'views/profile.html';
 }
 
 // Handle an error response from the API call

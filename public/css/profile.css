@@ -1,0 +1,13 @@
+body{
+    background: #283e4a;
+    color: #fff;
+}
+.photo{
+    margin-top: 15px;
+}
+.card .card-content p{
+    color: #0084bf;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating){
+    color: #0084bf;
+}
